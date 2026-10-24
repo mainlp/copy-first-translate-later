@@ -1,0 +1,7 @@
+include: _template.yaml
+dataset_path: json
+dataset_name: null
+dataset_kwargs:
+  data_files:
+    test: data/multiblimp_zh.jsonl
+task: zhoblimp_subset

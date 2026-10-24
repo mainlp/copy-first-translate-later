@@ -1,0 +1,17 @@
+numpy
+pandas
+torch==2.9.0
+torchvision==0.24.0
+transformers==4.56.2
+lm_eval>=0.4.10.dev0
+datasets<4.2  # newer versions require huggingface_hub>=1.0, incompatible with transformers 4.56
+accelerate
+wandb
+sentencepiece
+pytest
+huggingface_hub<1.0
+tqdm
+
+# plotting (also imported during evaluation)
+matplotlib
+seaborn
