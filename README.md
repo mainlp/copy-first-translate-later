@@ -23,7 +23,7 @@ The code is released under the [MIT License](LICENSE). The model checkpoints and
 
 ## Citation
 
-If you use this code, the dataset, or the checkpoints, please cite (to be replaced by the ACL Anthology .bib once EMNLP Proceedings are out):
+If you use this code, the dataset, or the checkpoints, please cite:
 
 ```
 @inproceedings{korner-etal-2026-copy,
