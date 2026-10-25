@@ -1,8 +1,6 @@
 
 # Eval
 
-Evaluation and analysis code for **"Copy First, Translate Later: Interpreting Translation Dynamics in Multilingual Pretraining"** (Körner*, Matveev*, Eichin*, Kutyniok†, Plank†, Hedderich†; EMNLP 2026). Preprint: https://arxiv.org/abs/2604.17633
-
 `src/` runs model checkpoints (from `training/`, or comparison HF models) through [`lm-evaluation-harness`](https://github.com/EleutherAI/lm-evaluation-harness) plus custom benchmarks (WLT, MultiBLiMP), and the logit-lens analysis.
 
  `custom_lm_eval_tasks/` holds `lm-evaluation-harness` YAML task defs for BLiMP variants not in the harness by default (Japanese, Chinese).
@@ -88,20 +86,3 @@ See `--help` of each script for all options.
 - `MODEL_CONFIG_DIR`: directory containing training model config files, e.g. `llama1b.json` (default: `../training/configs/models/`)
 - `WANDB_PROJECT`: W&B project name (default: `eval`)
 - `WANDB_ENTITY`: optional W&B entity
-
-## Citation
-
-If you use this code, please consider citing:
-
-```bibtex
-@misc{korner2026copyfirst,
-  title         = {Copy First, Translate Later: Interpreting Translation Dynamics in Multilingual Pretraining},
-  author        = {K{\"o}rner, Felicia and Matveev, Maria and Eichin, Florian and Kutyniok, Gitta and Plank, Barbara and Hedderich, Michael A.},
-  year          = {2026},
-  eprint        = {2604.17633},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CL},
-  note          = {To appear at EMNLP 2026},
-  url           = {https://arxiv.org/abs/2604.17633}
-}
-```
